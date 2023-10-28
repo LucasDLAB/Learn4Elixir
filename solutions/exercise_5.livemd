@@ -1,0 +1,102 @@
+<!-- livebook:{"file_entries":[{"file":{"file_system_id":"local","file_system_type":"local","path":"/data/Learn4Elixir/solutions/exercise_2.ex"},"name":"exercise_2.ex","type":"file"}]} -->
+
+# Untitled notebook
+
+```elixir
+defmodule Planetas do
+  @enforce_keys [:nome, :superficie, :volume, :massa, :temperatura_media, :distancia_do_sol]
+  defstruct nome: "",
+            superficie: "",
+            volume: "",
+            massa: "",
+            temperatura_media: 0,
+            distancia_do_sol: 0
+end
+
+defmodule SistemaSolar do
+  @enforce_keys [:nome, :planetas, :estrela]
+  defstruct nome: "", planetas: "", estrela: ""
+end
+```
+
+## Section
+
+```elixir
+mercurio = %Planetas{
+  nome: "Mercúrio",
+  superficie: "7,48×10^7",
+  volume: "6,083×10^10",
+  massa: "3,3011×10^23",
+  temperatura_media: 166.85,
+  distancia_do_sol: 57_910_000
+}
+
+venus = %Planetas{
+  nome: "Vênus",
+  superficie: "4,60×10^8",
+  volume: "92,843×10^10",
+  massa: "4,8685×10^24",
+  temperatura_media: 461,
+  distancia_do_sol: 108_200_000
+}
+
+terra = %Planetas{
+  nome: "Terra",
+  superficie: "5,10×10^8",
+  volume: "1,08321×10^12",
+  massa: "5,9736×10^24",
+  temperatura_media: 14,
+  distancia_do_sol: 149_600_000
+}
+
+marte = %Planetas{
+  nome: "Marte",
+  superficie: "1,44×10^8",
+  volume: "1,6318×10^11",
+  massa: "6,4174×10^23",
+  temperatura_media: -63,
+  distancia_do_sol: 227_940_000
+}
+
+jupiter = %Planetas{
+  nome: "Júpiter",
+  superficie: "6,21796×10^10",
+  volume: "1,43128×10^15",
+  massa: "1,8986×10^27",
+  temperatura_media: -108,
+  distancia_do_sol: 778_330_000
+}
+
+saturno = %Planetas{
+  nome: "Saturno",
+  superficie: "4,27×10^10",
+  volume: "8,2713×10^14",
+  massa: "5,6846×10^26",
+  temperatura_media: -139,
+  distancia_do_sol: 1_429_400_000
+}
+
+urano = %Planetas{
+  nome: "Urano",
+  superficie: "8,1156×10^9",
+  volume: "6,833×10^13",
+  massa: "8,6810×10^25",
+  temperatura_media: -220,
+  distancia_do_sol: 2_870_990_000
+}
+
+netuno = %Planetas{
+  nome: "Netuno",
+  superficie: "7,6183×10^9",
+  volume: "6,254×10^13",
+  massa: "1,0243×10^26",
+  temperatura_media: -223,
+  distancia_do_sol: 4_504_000_000
+}
+
+planetas = [mercurio, venus, terra, marte, jupiter, saturno, urano, netuno]
+
+sistema_solar = %SistemaSolar{nome: "Sistema Solar", estrela: "Sol", planetas: planetas}
+```
+
+<!-- livebook:{"offset":2286,"stamp":{"token":"XCP.phUWuZz99vjDXJx-NJM4TOPcakWl9XfEPRTTqAJVDkIqs868zcunYjtXv7Mc2frpjmqCfnUCU37eAyL7DsLm1Q6SfdEfvUP_ulavdg","version":2}} -->

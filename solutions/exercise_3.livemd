@@ -1,0 +1,21 @@
+<!-- livebook:{"file_entries":[{"file":{"file_system_id":"local","file_system_type":"local","path":"/data/solutions/exercise_1.ex"},"name":"exercise_1.ex","type":"file"}]} -->
+
+# Untitled notebook
+
+```elixir
+Mix.install([
+  {:kino, "~> 0.11.0"}
+])
+```
+
+## Section
+
+```elixir
+a = 1
+b = -2
+c = 1
+
+x = (-(b) + :math.sqrt((b **2) -4 * a * c))/2
+```
+
+<!-- livebook:{"offset":280,"stamp":{"token":"XCP.Mp-jCb9f0pvdnA9lPG68LKBJ1DMwffxL5ntMP0N3dUMekR2tRPCo3jnTLN-6zIk8_t0GO4IT4arr4oIsmHwG0Loju6Aq7FSLrAL_xw","version":2}} -->

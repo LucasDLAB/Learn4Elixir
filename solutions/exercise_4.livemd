@@ -1,3 +1,16 @@
+<!-- livebook:{"file_entries":[{"file":{"file_system_id":"local","file_system_type":"local","path":"/data/solutions/exercise_1.ex"},"name":"exercise_1.ex","type":"file"}]} -->
+
+# Untitled notebook
+
+```elixir
+Mix.install([
+  {:kino, "~> 0.11.0"}
+])
+```
+
+## Section
+
+```elixir
 resposta_completa = [
   %{
     "productId" => 1,
@@ -58,3 +71,6 @@ Map.put(Enum.at(resposta_completa, 4), :email, "contato@foobar.br")
 body = Map.get(Enum.at(resposta_completa, 2), "body")
 
 list_without_second_comment = resposta_completa -- Enum.at(resposta_completa, 1)
+```
+
+<!-- livebook:{"offset":280,"stamp":{"token":"XCP.Mp-jCb9f0pvdnA9lPG68LKBJ1DMwffxL5ntMP0N3dUMekR2tRPCo3jnTLN-6zIk8_t0GO4IT4arr4oIsmHwG0Loju6Aq7FSLrAL_xw","version":2}} -->

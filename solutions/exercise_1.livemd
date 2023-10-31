@@ -1,0 +1,28 @@
+<!-- livebook:{"file_entries":[{"file":{"file_system_id":"local","file_system_type":"local","path":"/data/solutions/exercise_1.ex"},"name":"exercise_1.ex","type":"file"}]} -->
+
+# Exercicio 1
+
+```elixir
+Mix.install([
+  {:kino, "~> 0.11.0"}
+])
+```
+
+## Section
+
+```elixir
+lista = [
+  is_number(0),
+  is_integer(1),
+  is_float(1.0),
+  is_binary("hello"),
+  is_atom(:atom),
+  is_boolean(false),
+  is_map(%{nome: "Lucas"}),
+  is_tuple({:nome, "Lucas"})
+]
+
+Enum.member?(lista, true)
+```
+
+<!-- livebook:{"offset":280,"stamp":{"token":"XCP.Mp-jCb9f0pvdnA9lPG68LKBJ1DMwffxL5ntMP0N3dUMekR2tRPCo3jnTLN-6zIk8_t0GO4IT4arr4oIsmHwG0Loju6Aq7FSLrAL_xw","version":2}} -->
